@@ -1,0 +1,10 @@
+function Home() {
+  return (
+    <section>
+      <h1>歡迎來到聖潔牙醫診所</h1>
+      <p>提供您最專業與貼心的牙科服務。</p>
+    </section>
+  );
+}
+
+export default Home;

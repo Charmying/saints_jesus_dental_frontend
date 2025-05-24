@@ -5,3 +5,7 @@
 2. `npm install`
 
 3. `npm run dev`
+
+## npm install
+
+- `npm install react-router-dom`
