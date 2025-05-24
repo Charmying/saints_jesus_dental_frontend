@@ -6,7 +6,7 @@ function App() {
   return (
     <section>
       <Header />
-      <main>
+      <main className="p-4">
         <AppRoutes />
       </main>
       <Footer />
