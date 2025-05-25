@@ -21,7 +21,7 @@ const Slide = ({ slide, isActive, minHeight }: { slide: SlideItem; isActive: boo
       className={ `w-full h-full absolute top-0 left-0 transition-opacity duration-1000 ease-in-out ${ isActive ? 'opacity-100 z-10' : 'opacity-0 z-0 pointer-events-none' }` }
       style={{ backgroundImage: `url(${slide.bgImage})`, backgroundSize: 'cover', backgroundPosition: 'center', minHeight, }}
     >
-      { /* 半透明遮罩效果 */ }
+      {/* 半透明遮罩效果 */}
       <div className="absolute inset-0" style={{ backgroundImage: 'linear-gradient(90deg, 0%, transparent 100%)' }} />
 
       <div className="w-full h-full flex items-end px-7 relative md:px-10">
@@ -30,7 +30,7 @@ const Slide = ({ slide, isActive, minHeight }: { slide: SlideItem; isActive: boo
           <p className="hidden text-white md:block">{slide.titleDesktop}</p>
         </div>
 
-        { /* 中間 scroll 圖示，只在電腦版顯示 */ }
+        {/* 中間 scroll 圖示，只在電腦版顯示 */}
         <div className="w-1/5 mb-10 hidden cursor-pointer md:block"
           onClick={() => {
             const main = document.querySelector('main');
@@ -40,8 +40,8 @@ const Slide = ({ slide, isActive, minHeight }: { slide: SlideItem; isActive: boo
           <img src="https://hsin-ho.tw/wp-content/uploads/2023/08/SCROLL.svg" alt="Scroll" className="m-auto" />
         </div>
 
-        { /* 右側空白佔位（電腦版） */ }
-        { /* <div className="w-2/5 hidden md:block" /> */ }
+        {/* 右側空白佔位（電腦版） */}
+        {/* <div className="w-2/5 hidden md:block" /> */}
       </div>
     </div>
   );
