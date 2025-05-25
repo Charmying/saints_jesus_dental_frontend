@@ -27,7 +27,7 @@ function App() {
     <section>
       <Header />
       <CarouselBanner slides={slides} interval={3000} minHeight="80vh" />
-      <main className="p-4">
+      <main className="m-4 p-4">
         <AppRoutes />
       </main>
       <Footer />
