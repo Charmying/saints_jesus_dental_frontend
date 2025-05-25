@@ -48,6 +48,7 @@ table {
 @tailwind utilities;
 
 body {
+  font-family: 'Roboto', sans-serif;
   color: #00000F;
   background-color: #FFFFF0;
 }
