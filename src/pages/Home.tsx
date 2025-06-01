@@ -68,11 +68,11 @@ function Home() {
           <p className="text-body1 my-4">聖潔牙醫好評不斷，我們擁有多元化的專業服務，致力於提供患者全方位的口腔健康照護。更提供細項服務如洗牙、牙齒美容等，以滿足患者對口腔美學和整體健康的需求。</p>
         </div>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
           {services.map((service, idx) => (
-            <div key={idx} className="p-8 flex flex-col items-center text-center border border-[#00000F] border-solid rounded-xl">
+            <div key={idx} className="p-8 flex flex-col items-center border border-[#00000F] border-solid rounded-xl">
               <img src={service.img} alt={service.title} className="w-16 h-16 mb-4" />
-              <h3 className="text-h3">{service.title}</h3>
+              <h3 className="text-h3 text-center my-2">{service.title}</h3>
               <p className="text-body1 mt-2">{service.desc}</p>
             </div>
           ))}
