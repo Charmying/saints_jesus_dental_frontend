@@ -38,7 +38,7 @@ function Home() {
             <img src="https://hsin-ho.tw/wp-content/uploads/2023/08/about-img.webp" alt="服務特色" className="mx-auto rounded-xl" />
           </div>
           <div className="w-full md:w-[60%] md:self-center">
-            <h2 className="text-h1">ABOUT</h2>
+            <h2 className="text-h1 my-8">ABOUT</h2>
             <h2 className="text-h2 my-8">聖潔牙醫診所-服務特色</h2>
             <p className="text-body1 my-4">聖潔牙醫以專業的技術和周到的服務贏得患者的信賴，診所提供多項高品質的診療服務，包括人工植牙、牙周治療、全口重建、家庭牙科以及齒顎矯正。</p>
             <p className="text-body1 my-4">在聖潔牙醫，我們秉持著對患者的用心與專業，致力於打造一個舒適、安心的就醫環境。透過最新的醫療科技和關懷入微的服務，我們期許為每位患者呈現一個健康、美麗的笑容。</p>
@@ -51,7 +51,7 @@ function Home() {
             />
           </div>
           <div className="w-full md:w-[60%] md:self-center">
-            <h2 className="text-h1">ENVIRONMENT</h2>
+            <h2 className="text-h1 my-8">ENVIRONMENT</h2>
             <h2 className="text-h2 my-8">聖潔牙醫診所-環境介紹</h2>
             <p className="text-body1 my-4">聖潔牙醫診所診療環境明亮且光線充足，聖潔牙醫診所致力於營造一個舒適、友善且放鬆的就醫環境，確保患者在每一次的就診前，能有效減輕看牙齒的緊張感。</p>
             <p className="text-body1 my-4">進入聖潔牙醫診所，首先感受到的是寧靜溫馨的氛圍，診所室內採用了明亮且充足的自然光線，營造出明亮愉悅的空間，讓患者感到放鬆。</p>
@@ -63,11 +63,10 @@ function Home() {
       {/* 服務項目區塊 */}
       <section className="mb-24 md:mb-40">
         <div className="mx-auto">
-          <h2 className="text-h1">SERVICE</h2>
+          <h2 className="text-h1 my-8">SERVICE</h2>
           <h2 className="text-h2 my-8">聖潔牙醫診所-服務項目</h2>
           <p className="text-body1 my-4">聖潔牙醫好評不斷，我們擁有多元化的專業服務，致力於提供患者全方位的口腔健康照護。更提供細項服務如洗牙、牙齒美容等，以滿足患者對口腔美學和整體健康的需求。</p>
         </div>
-
         <div className="mt-12 grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
           {services.map((service, idx) => (
             <div key={idx} className="p-8 flex flex-col items-center border border-[#00000F] border-solid rounded-xl">
@@ -86,7 +85,7 @@ function Home() {
             <img src="https://hsin-ho.tw/wp-content/uploads/2023/08/優質的醫師與助理團隊.webp" alt="診所環境" className="mx-auto rounded-xl" />
           </div>
           <div className="w-full md:w-[60%] md:self-center">
-            <h2 className="text-h1">NOTICE</h2>
+            <h2 className="text-h1 my-8">NOTICE</h2>
             <h2 className="text-h2 my-8">聖潔牙醫預約注意事項</h2>
             <p className="text-body1 my-4">在預約聖潔牙醫的過程中，請注意以下事項。首先聖潔牙醫會貼心地提前打電話提醒預約的時間，確保不會錯過就診。</p>
             <p>若因故無法前往，請務必提早通知，您可以隨時來電取消預約，以便讓其他患者有機會利用該時段。</p>
@@ -96,17 +95,16 @@ function Home() {
 
       {/* 診所資訊區塊 */}
       <section className="mb-24 md:mb-40">
-        <div className="flex flex-col gap-12 md:flex-row">
-          <div className="md:w-[35%]">
-            <h2 className="text-h1">INFORMATION</h2>
+        <h2 className="text-h1 my-8">INFORMATION</h2>
+        <div className="block gap-20 lg:flex">
+          <div className="self-center">
             <h2 className="text-h2 my-8">聖潔牙醫診所</h2>
             <p className="text-body1 my-4">地址：台中市北屯區東山路</p>
             <p className="text-body1 my-4">電話：<a href="tel:0912345678">0912345678</a></p>
             <p className="text-body1 my-4">LINE：@0000000000Charmy</p>
           </div>
-
-          <div className="w-full overflow-x-auto md:w-[65%]">
-            <table className="w-full text-center border border-[#00000F] border-solid">
+          <div className="w-full overflow-x-auto self-center">
+            <table className="w-full text-center my-8 border border-[#00000F] border-solid">
               <thead>
                 <tr>
                   <th className="text-body1 p-2 border border-[#00000F] border-solid">診療時間</th>
@@ -152,13 +150,12 @@ function Home() {
                 </tr>
               </tbody>
             </table>
-            <div className="mt-4 text-body2">
+            <div className="my-4 text-body2">
               ※ 醫師看診時段依現場狀況可能有異動
             </div>
           </div>
         </div>
-
-        <div className="my-8">
+        <div className="my-16">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.9257063525306!2d120.71299377606006!3d24.174338172367733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3469181f04beb525%3A0x4bf51be43ffcca9c!2z6IGW5r2U54mZ6Yar!5e0!3m2!1szh-TW!2stw!4v1748191395847!5m2!1szh-TW!2stw" className="w-full h-[30vh]" loading="lazy" allowFullScreen></iframe>
         </div>
       </section>
